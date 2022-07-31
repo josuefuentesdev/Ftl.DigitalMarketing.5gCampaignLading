@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+/* CSS Variables */
+:root {
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 800;
+  --primary-color: #264653;
+  --secondary-color: #2a9d8f;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+  --border-radius: 0.2rem;
+  --max-width: 1600px;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* transition: var(--transition); */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+svg {
+  background-color: red;
+}
+
+/* -------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  max-width: var(--max-width);
+  padding: 0.4rem 2.5rem 0.2rem 2.5rem;
+  margin: 0 auto;
+}
+.brand_logo {
+  display: flex;
+}
+/* -------- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+/* -------- */
+.title {
+  font-weight: var(--bolder-font);
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero__text--bold {
+  font-weight: var(--bold-font);
+  font-size: 1.8rem;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 50rem;
+}
+
+/* ----- */
+.value-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ---- PRICE ---- */
+
+.price p {
+  display: inline-block;
+}
+
+.price__currency {
+  position: relative;
+  top: -4rem;
+  left: 0.5rem;
+  font-weight: var(--bold-font);
+  font-size: 2rem;
+}
+
+.price__value {
+  font-size: 8rem;
+  font-weight: var(--bolder-font);
+}
+
+.price__type {
+  font-weight: var(--bold-font);
+}
+
+.price__condition {
+  position: relative;
+  top: -1.5rem;
+  left: 2rem;
+}
+
+/* ----- */
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 20rem;
+}
+
+.form input {
+  width: 25rem;
+  height: 3rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.form button {
+  height: 3rem;
+  width: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+  font-weight: var(--bold-font);
+  font-size: 1.1rem;
+}
+
+/* ----- */
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 1rem; */
+  background-color: #f5f5f5;
+  padding-top: 1.5rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  max-width: var(--max-width);
+  margin: 2.5rem auto;
+  gap: 2rem;
+  padding: 0rem 2rem;
+  justify-content: space-around;
+}
+
+.benefits h2 {
+  font-weight: var(--bolder-font);
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* background-color: #073b4c; */
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  /* color: white; */
+}
+
+.benefit__gauge {
+  padding: 0.6rem;
+  /* filter: invert(1); */
+}
+
+.benefit img {
+  width: 12rem;
+}
+.benefit__description{
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  height: 5rem;
+}
+
+.benefit__description p {
+  font-weight: var(--bold-font);
+}
+
+.benefit__description span {
+  font-size: 2rem;
+}
+
+/* ----- */
+.social-proof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-proof h3 {
+  font-size: 1.8rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.social-proof h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+/* ----- */
+.closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0rem;
+
+  background-color: #073B4C;
+}
+
+.closing h2 {
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.closing__image {
+  height: 10rem;
+  filter: invert(1);
+}
+
+.closing {
+  color: white;
+}
