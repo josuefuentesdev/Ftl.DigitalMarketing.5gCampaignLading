@@ -48,7 +48,7 @@ svg {
 }
 
 /* -------- */
-nav {
+header {
   display: flex;
   justify-content: space-between;
   height: 2.5rem;
