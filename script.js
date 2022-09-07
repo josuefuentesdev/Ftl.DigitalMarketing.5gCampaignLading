@@ -64,7 +64,7 @@ function submitForm(contactFormId, formResponseId, emailInputId) {
             data.append(pair[0], pair[1]);
         }
 
-        fetch("https://ftldigitalmarketingazurefunctions.azurewebsites.net/api/HttpStartFromLandingPage", {
+        fetch("https://api-functions-prod.azure-api.net/FtlDigitalMarketingAzureFunctions/HttpStartFromLandingPage", {
             method: 'post',
             body: data,
         })
