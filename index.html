@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fictitel lighting network</title>
 
     <link rel="icon" sizes="32x32" href="assets\icon\logo_bg_plain.ico" />
-
     <link rel="stylesheet" href="assets\css\style.css" />
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdnpsUhAAAAAAq4TmntsJ3BEUSe_5ToEjswWG4r"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -19,7 +20,7 @@
           srcset=""
         />
       </a>
-      <a href="#" class="brand_logo">
+      <a href="https://josuefuentesdev.com" target="_blank" class="brand_logo">
         <img
           src="assets\img\clarity_world-solid.svg"
           alt="clarity_world-solid"
@@ -43,21 +44,30 @@
           <div class="value-form">
             <div class="price">
               <p class="price__currency">$</p>
-              <p class="price__value">39</p>
+              <p class="price__value">99</p>
               <p class="price__type">/mo.</p>
               <br />
               <p class="price__condition">Plus taxes and fees.</p>
             </div>
-    
-            <form class="form" action="" method="post">
+
+            <form class="form" method="post" id="contact-form1">
               <p>Limited stock available*</p>
               <input
                 type="email"
-                name="buynow"
-                id="BuyNowEmail"
-                placeholder="    Enter your email address"
+                name="email"
+                id="BuyNowEmail1"
+                placeholder="Enter your email address"
               />
-              <button type="submit">BUY NOW</button>
+              <small id="form-response1"></small>
+              <button
+              class="g-recaptcha custom-button"
+              data-sitekey="6LdnpsUhAAAAAAq4TmntsJ3BEUSe_5ToEjswWG4r"
+              data-callback="onSubmitForm1"
+              data-action="submit"
+              disabled
+              >
+                BUY NOW
+              </button>
             </form>
           </div>
         </div>
@@ -109,15 +119,24 @@
           src="assets\img\mdi_clock-fast.svg"
           alt="fast-clock"
         />
-        <form class="form" action="" method="post">
+        <form class="form" method="post" id="contact-form2">
           <p>Limited stock available*</p>
           <input
             type="email"
-            name="buynow"
-            id="BuyNowEmail"
-            placeholder="    Enter your email address"
+            name="email"
+            id="BuyNowEmail2"
+            placeholder="Enter your email address"
           />
-          <button type="submit">BUY NOW</button>
+          <small id="form-response2"></small>
+          <button
+          class="g-recaptcha custom-button"
+          data-sitekey="6LdnpsUhAAAAAAq4TmntsJ3BEUSe_5ToEjswWG4r"
+          data-callback="onSubmitForm2"
+          data-action="submit"
+          disabled
+          >
+          BUY NOW
+        </button>
         </form>
       </section>
     </main>

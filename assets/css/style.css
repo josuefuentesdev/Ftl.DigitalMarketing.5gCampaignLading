@@ -66,6 +66,10 @@ main {
   justify-content: space-evenly;
   gap: 20px;
 }
+
+button {
+  cursor: pointer;
+}
 /* -------- */
 .title {
   font-weight: var(--bolder-font);
@@ -83,7 +87,8 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0rem 2rem;
+  justify-content: center;
+  padding: 2rem 2rem;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -152,6 +157,7 @@ main {
   height: 3rem;
   border-radius: var(--border-radius);
   font-size: 1rem;
+  padding: 1rem;
 }
 
 .form button {
@@ -237,6 +243,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem 0rem;
 }
 
 .social-proof h3 {
